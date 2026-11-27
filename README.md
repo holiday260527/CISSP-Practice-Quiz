@@ -102,3 +102,101 @@ Important: Export your progress before clearing browser data or switching device
 📊 Data Quality
 
 The question bank was extracted from the supplied Word document and cross-checked against the supplied PDF.
+
+1,150 of 1,168 answers matched the PDF exactly.
+The remaining 18 discrepancies were individually reviewed and attributed to PDF page-break extraction artifacts.
+Validation included answer coverage, option completeness, answer boundaries, and duplicate option checks.
+Excluded Questions
+
+133 questions from the original 1,301-question bank are not included.
+
+Type	Count	Reason
+Figure-dependent questions	112	Original Word illustrations consist of floating image fragments that cannot be reliably reconstructed
+Matching / Drag-and-drop	21	These questions require pairing or ordering and cannot be fairly graded by a single/multiple-choice engine
+Total	133	
+
+For these questions, please refer to the original PDF.
+
+❓ FAQ
+
+Q: Does it work without an internet connection?
+
+Yes. The application is a self-contained HTML file and does not load external resources.
+
+Q: Will my progress disappear when I close the browser?
+
+Normally, no. Progress is saved locally in the browser. However, clearing browser data may erase it. Export regular backups.
+
+Q: Can I use the same HTML file on multiple devices?
+
+Yes. The question bank is embedded in the file. Progress is stored separately on each device and can be transferred through JSON export/import.
+
+Q: Can multiple people use the same file?
+
+Yes. Each person's progress is stored in their own browser.
+
+Q: Can I modify the questions?
+
+The question bank is stored in the BANK array inside the <script> section. Users familiar with JSON and JavaScript can modify it. Make a backup before editing.
+
+📦 Project Structure
+text
+CISSP-Practice-Quiz/
+│
+├── CISSP刷题系统_官方练习题库.html
+├── README.md
+└── LICENSE (optional)
+
+⚖️ Source & Disclaimer
+
+Question content originates from:
+
+(ISC)² CISSP Certified Information Systems Security Professional Official Practice Tests, Third Edition
+
+Authors: Mike Chapple and David Seidl
+Copyright © 2021 John Wiley & Sons, Inc.
+
+This project reorganizes the referenced question content into an offline practice tool for personal study.
+
+This project is not affiliated with, sponsored by, or endorsed by (ISC)² or Wiley.
+
+Please do not redistribute the copyrighted question content commercially.
+
+中文说明
+
+这是一个基于单文件 HTML 的 CISSP 离线刷题工具，收录 1,168 道练习题，覆盖 CISSP 八大知识域及四套模拟测试。
+
+核心特点
+无需安装，双击 HTML 即可运行。
+完全离线，无需服务器或网络连接。
+支持英文 / 中文界面。
+单选、多选即时判分。
+提供答案及官方英文解析。
+支持错题重练、随机练习和章节练习。
+自动记录作答进度及正确率。
+支持 JSON 导出 / 导入，实现跨设备进度迁移。
+支持电脑、Android 和 iOS。
+支持深色 / 浅色主题。
+使用方法
+下载 HTML 文件。
+使用电脑或手机系统浏览器打开。
+选择章节或综合练习。
+开始答题，提交后查看答案和解析。
+进度迁移
+点击右上角「导出」，生成 JSON 进度备份。
+在另一台设备打开 HTML 文件。
+点击「导入」，选择之前导出的 JSON 文件。
+系统会合并记录，同一道题以导入记录为准。
+
+进度保存在本机浏览器，不会自动上传或同步。
+
+数据说明
+原书共 1,301 题，收录 1,168 题。
+单选题 1,122 道，多选题 46 道。
+99 道题包含共用场景材料。
+未收录 112 道依赖插图的题目及 21 道匹配 / 拖拽题目。
+版权声明
+
+题目来源于 Mike Chapple、David Seidl 所著的《(ISC)² CISSP Official Practice Tests, Third Edition》，版权归 John Wiley & Sons, Inc. 所有。
+
+本项目仅用于个人学习，与 (ISC)² 和 Wiley 无官方关联，也未获得其背书。请勿商业分发受版权保护的题目内容。
